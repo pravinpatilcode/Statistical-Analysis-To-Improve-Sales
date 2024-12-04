@@ -1,0 +1,271 @@
+## Task_1
+A committee of 5 people is to be chosen from a group of 6 men and 4 women. How many committees are possible if.
+a) there are to be 3 men and 2 women?
+b) there are to be men only?
+c) there is to be majority of women?
+
+Select the correct answer from the following options:
+1. 666,6,66
+2. 120,6,66
+3. 6,666,66
+4. 6,66,120
+
+
+Using Combinations
+C(n, r) = n! / (r! * (n - r)!)
+
+n is the total number of items
+r is the number of items to choose
+
+3 men and 2 women
+Choose 3 men from 6: C(6, 3)
+Choose 2 women from 4: C(4, 2)
+Total combinations: C(6, 3) * C(4, 2)
+
+Men only
+Choose 5 men from 6: C(6, 5)
+
+ Majority of women (at least 3 women)
+3 women and 2 men: C(4, 3) * C(6, 2)
+4 women and 1 man: C(4, 4) * C(6, 1)
+Calculating the Combinations
+
+ C(6, 3) * C(4, 2) = (6! / (3! * 3!)) * (4! / (2! * 2!)) = 20 * 6 = 120
+ C(6, 5) = 6! / (5! * 1!) = 6
+C(4, 3) * C(6, 2) + C(4, 4) * C(6, 1) = (4! / (3! * 1!)) * (6! / (2! * 4!)) + (4! / (4! * 0!)) * (6! / (1! * 5!)) = 4 * 15 + 1 * 6 = 66
+
+the answer is:
+2. 120, 6, 66
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## Task_2
+Five-card stud is a poker game in which a player deals with 5 cards from an ordinary deck of 52 playing cards. How many distinct ways are possible in which a player can deal with 5 cards from a deck of 52 playing cards?
+
+Note: In this problem, the order of dealing cards is NOT important. Select the correct answer from the following options:
+1. 2,598,000
+2. 2,000,960
+3. 2,598,960
+4. 2,500,960
+
+Using Combinations
+C(n, r) = n! / (r! * (n - r)!)
+
+n is the total number of items (52 cards)
+r is the number of items to choose (5 cards)
+
+Calculating the Combinations
+C(52, 5) = 52! / (5! * (52 - 5)!)
+
+C(52, 5) = 2,598,960
+
+ the answer is:
+3. 2,598,960
+-------------------------------------------------------------------------------------------------------------------------------------
+## Task_3
+
+Using Permutations
+
+P(n, r) = n! / (n - r)!
+
+n is the total number of items (8 contestants)
+r is the number of items to choose (3 prizes)
+
+P(8, 3) = 8! / (8 - 3)!
+P(8, 3) = 8! / 5! = 8 * 7 * 6 = 336
+
+the answer is:
+2. 336
+-------------------------------------------------------------------------------------------------------------------------------------
+## Task_4
+
+
+There are 15 students in a class. Two of them are Jenny and David, who don't get along very well. In how many ways can the teacher arrange the students in a row so that Jenny and David are not together?
+
+Select the correct answer from the following options:
+1. 11,00,31,77,85,600
+2. 11,11,31,77,85,600
+3. 11,22,31,77,85,600
+4. 11,33,31,77,85,600
+
+Total Arrangements Without Restrictions
+This is a simple permutation problem:
+find the total number of ways to arrange 15 students without any restrictions.
+
+P(15, 15) = 15!
+
+Arrangements with Jenny and David Together
+we have 14 units to arrange (13 individual students + 1 unit of Jenny and David).
+
+P(14, 14) = 14!
+
+Jenny and David, they can be arranged in 2 ways 
+2 * 14!
+
+Arrangements with Jenny and David Not Together
+P(15, 15) - (2 * 14!)
+
+Calculations
+P(15, 15) - (2 * 14!) = 11,33,31,77,85,600
+
+the answer is:
+4. 11,33,31,77,85,600
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## Task_5
+
+Suppose two dice are rolled together.  What would be the probability if the number obtained on one of the dice is thrice the nymber obtained on the other side?
+
+Select the correct answer answer from the following options:
+1. 1/4
+2. 1/6
+3. 1/9
+4. 1/36
+
+Ans: There are 4 favorable outcomes.
+the total number of possible outcomes is 6 * 6 = 36.   
+
+Calculations
+Probability = Favorable outcomes / Total possible outcomes
+
+Probability = 4 / 36
+Probability = 1 / 9
+
+the answer is:
+3. 1/9
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## Task_6
+Suppose there are 7 consonants and 4 vowels in a word. How many words can be formed with 3 consonants and 2 vowels?
+
+Using Combinations and Permutations
+
+Choosing consonants: C(7, 3) = 7! / (3! * 4!)
+Choosing vowels: C(4, 2) = 4! / (2! * 2!)
+Arranging 5 letters: P(5, 5) = 5!
+
+calculations
+C(7, 3) * C(4, 2) * P(5, 5)
+
+(7! / (3! * 4!)) * (4! / (2! * 2!)) * 5!
+= (7 * 6 * 5) * (4 * 3) * (5 * 4 * 3 * 2 * 1)
+= 210 * 12 * 120
+= 25,200
+
+the answer is:
+There are 25,200 possible words.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+## Task_7
+
+A pack of 25 bulbs contains 25% defective bulbs. A bulb is drawn randomly from the pack of 25 bulbs.
+The drawn bulb is non-defective, and it is not placed back in the pack. If one more bulb is drawn randomly,
+What would be the probability that this bulb is also non-defective?
+
+Select the correct answer from the following options:
+1. 18!/24!
+2. 19!/25!
+3. 18/24
+4. 19/25
+
+Solution:-
+probability of the second bulb being non-defective, given that the first one was non-defective, is 18/24.
+
+Probability of Non-Defective:
+There are 25 bulbs in total, and 25% are defective, so 75% are non-defective.
+Therefore, the probability of drawing a non-defective bulb first is 75% of 25, which is 19 out of 25.
+
+Probability of Second Bulb Being Non-Defective:
+first bulb drawn was non-defective and not replaced, there are now 24 bulbs left in the pack.
+Of these 24 bulbs, 18 are non-defective.
+So, the probability of drawing a non-defective bulb second is 18 out of 24.
+
+
+the correct answer is 
+3. 18/24.
+-------------------------------------------------------------------------------------------------------------------------------------
+## Task_8
+
+Consider that 46% of the U>S labor force is female and 25% of the females are part-time. In addition, 17.4% of all American laborers are known to be part-time workers. If a part-time worker is randomly selected, what is the probability that the worker is female?
+
+46% of the US labor force is female.
+25% of females are part-time.
+17.4% of all American laborers are part-time.
+
+We need to find the probability that a randomly selected part-time worker is female
+Using Conditional Probability
+P(A|B) = P(A and B) / P(B)
+
+P(A|B) is the probability of A happening given that B has already happened.   
+P(A and B) is the probability of both A and B happening.
+P(B) is the probability of B happening.
+
+A = the worker is female
+B = the worker is part-time
+
+Calculation
+P(A and B) = 0.46 * 0.25 = 0.115
+
+P(B) = 0.174
+
+P(A|B) = P(A and B) / P(B)
+= 0.115 / 0.174
+=  0.6609
+
+0.6609 * 100 = 66.09%
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## Task_9
+NIX partners researched to determine which office design changes would increase productivity. During the examination, 70% of respondents believed that reducing noise would increase productivity, and 67% said that more storage space would increase productivity in addition, suppose that 56% of respondents believe that reducing noise and increasing storage space will increase productivity.
+
+70% believe reducing noise increases productivity.
+67% believe more storage space increases productivity.
+56% believe both reducing noise and increasing storage space increase productivity.
+
+A = the set of respondents who believe reducing noise increases productivity.
+B = the set of respondents who believe more storage space increases productivity.
+
+P(A) = 0.7
+P(B) = 0.67
+P(A and B) = 0.56
+
+The formula for the union of two sets is:
+P(A or B) = P(A) + P(B) - P(A and B)
+
+P(A or B) = 0.7 + 0.67 - 0.56 = 0.81
+0.81 * 100 = 81%
+
+81% of respondents believe that either reducing noise or increasing storage space (or both) will increase productivity.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Task_9 (ii)
+
+A worker is randomly selected and asked about changes in the office design. The worker believes that reducing noise will increase productivity. what is the probability that the worker believes that more storage space will increase productivity?
+
+70% believe reducing noise increases productivity.
+67% believe more storage space increases productivity.
+56% believe both reducing noise and increasing storage space increase productivity.
+
+The formula for conditional probability is:
+
+P(B|A) = P(A and B) / P(A)
+
+P(B|A) is the probability of B happening given that A has already happened.
+P(A and B) is the probability of both A and B happening.
+P(A) is the probability of A happening.
+
+Calculating the Conditional Probability
+P(B|A) = 0.56 / 0.7
+=  0.8
+
+0.8 * 100 = 80%
+the probability that a worker who believes reducing noise will increase productivity also believes that more storage space will increase productivity is approximately 80%.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
